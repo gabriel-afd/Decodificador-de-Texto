@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+
+</head>
+<body>
+    <header>
+        
+            <div class="cabecalho">
+            <img class="logo_alura" src="./imagens/logo_alura.svg" alt="">
+            
+
+        </div> <!-- As partes responsivas devem ficar em uma div! -->
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="left">
+                <textarea class="entrada_texto" id="entradaTexto" placeholder="Digite seu texto"></textarea>
+
+                <div class="footer_esquerda">
+                    <img src="./imagens/bi_exclamation-circle-fill.svg" alt="">
+                    <span class="left_info inter-font_family">Apenas letras minúsculas e sem acento.</span>
+                    <div class="btn_esquerda">
+                        <button  class="criptografar_btn" id="criptografarBtn">Criptografar</button>
+                        <button  class="descriptografar_btn" id="descriptografarBtn">Descriptografar</button> 
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="right" id="right">
+                <img class="boneco" id="boneco" src="./imagens/High quality products 1 1.svg" alt="">
+                <div class="class">
+                    <textarea class="msg_final inter-font_family" id="msgFinal" placeholder="Nenhuma mensagem encontrada"></textarea>
+                    <p class="right_info inter-font_family" id="rightInfo">Digite um texto que você deseja criptografar ou descriptografar.
+                </div>
+                </p>
+                <button class="copiar oculto" id="copiarBtn">Copiar</button>
+            </div>
+        </div>
+        
+    
+
+        
+        
+    </main>
+
+    <footer>
+        <h1 class="footer">Desenvolvido por Gabriel Medeiros de Mendonça a partir do Figma da Alura</h1>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

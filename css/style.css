@@ -1,0 +1,243 @@
+:root{
+    --color-blue:#0A3871;
+    --color-background:#F3F5FC;
+    --color-gris:#D8DFE8;
+    --color-gray:#495057;
+    
+    
+}
+
+.inter-font_family {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+  }
+
+body {
+    background-color: var(--color-background);
+}
+
+
+/*Header*/
+header{
+    
+    
+}
+
+.cabecalho {
+    
+    width: 90% ;
+    margin: auto;
+    
+}
+
+.logo_alura{
+    margin-top: 40px;
+    
+}
+
+/*Main*/
+
+.main{
+  
+  width: 80.5%;
+  margin: auto 40px auto auto;
+  display: grid;
+  grid-template-columns: auto 400px;
+  min-height: calc(100vh - 106px - 72px);
+  align-items: end;  
+}
+
+.left{
+    
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.entrada_texto{
+    width: 80%;
+    font-size: 32px;
+    color: var(--color-blue);
+    resize: none;
+    background:none ;
+    border: none;
+    outline: none;
+}
+
+.entrada_texto::placeholder{
+    color: var(--color-blue);
+}
+
+.footer_esquerda{
+    
+}
+
+.left_info{
+    font-size: 12px;
+    color: var(--color-gray);
+}
+
+.texto_esquerda{
+    display: inline-block;
+}
+
+.btn_esquerda{
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.criptografar_btn,
+.descriptografar_btn,
+.copiar{
+    border: 1px solid var(--color-blue);
+    cursor: pointer;
+    max-width: 328px;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+.criptografar_btn{
+    background-color: var(--color-blue);
+    color: white;
+}
+
+.descriptografar_btn{
+   
+    background-color: var(--color-gris);
+    color: var(--color-blue);
+    
+}
+
+.right{
+    background-color: rgb(255, 255, 255);
+    height: calc(100% + 48px);
+    border-radius: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    ;
+}
+
+.right.ajustar{
+    justify-content: space-between;
+}
+
+.boneco{
+    width: 100%;
+}
+
+.oculto{
+    display: none;
+}
+
+.msg_final{
+    background-color: none;
+    border: none;
+    outline: none;
+    resize: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.msg_final::placeholder{
+    color: var(--color-gray);
+    text-align: center;
+}
+
+.msg_final.ajustar{
+    text-align: left;
+    font-weight: 400;
+    height: 80%;
+    
+}
+
+.right_info{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 16px;
+    color: var(--color-gray);
+}
+
+.copiar{
+    display: none;
+    width: 100%;
+    background: transparent;
+    color: var(--color-blue);
+    
+}
+
+.footer{
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+    background-color: #0A3871;
+    width: 100%;
+    height: 50px;
+    color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width:800px){ /*Ao chegar em uma largura de 770px apenas a parte de 400px será exibida */
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin: auto 40px;
+    }
+    .right {
+        height: 100%;
+    }
+
+    .boneco{
+        display: none;
+    }
+
+    .btn_esquerda{
+        justify-content: center;
+    }
+
+    .criptografar_btn,
+    .descriptografar_btn{
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    .main{
+        margin: auto 16px;
+    }
+    .criptografar_btn,
+    .descriptografar_btn{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:360px){
+    .footer{
+        display: none;
+    }
+}
+
