@@ -20,10 +20,6 @@ body {
 
 
 /*Header*/
-header{
-    
-    
-}
 
 .cabecalho {
     
@@ -71,9 +67,7 @@ header{
     color: var(--color-blue);
 }
 
-.footer_esquerda{
-    
-}
+
 
 .left_info{
     font-size: 12px;
